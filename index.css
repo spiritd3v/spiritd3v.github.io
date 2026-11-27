@@ -1,0 +1,54 @@
+.drag-nav {
+  height: 50px;
+  background: #0e0e0f;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 0 15px;
+  position: relative;
+  app-region: drag;
+  -webkit-app-region: drag;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Optional: Ensure vertical scrolling remains active while hiding overflow-x */
+html, body {
+  font-family: 'Trebuchet MS', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+button {
+  -webkit-app-region: no-drag;
+  app-region: no-drag;
+  border: 0px;
+}
+
+#elements {
+  background-color: #adadba;
+  position: relative;
+  align-items: center;
+}
+
+#buttonset1 {
+  background-color: #adadba;
+  position: relative;
+  left: 3px;
+  height: 25px;
+  width: 50px;
+  /* padding: 0 0px; */
+  color: #0e0e0f;
+  border: 0px;
+  border-radius: 0px;
+}
+
+#close {
+    position: absolute;
+    font:larger;
+    right: 5px;
+    width: 40px;
+    height: 40px;
+}
